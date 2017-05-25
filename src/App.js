@@ -22,6 +22,8 @@ componentWillMount() {
         </div>
         <p className="App-intro">
             {this.state.message}
+            {this.state.message}
+            {this.state.message}
         </p>
       </div>
     );

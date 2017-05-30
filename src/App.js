@@ -9,7 +9,8 @@ class App extends Component {
 
 componentWillMount() {
     this.setState({
-        message: "I am being rendered!"
+        message1: "Welcome to Mike's first React page.",
+        message2: "Let's try some things."
 })
 }
 
@@ -18,13 +19,16 @@ componentWillMount() {
       <div className="App">
         <div className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h2>Hello, World</h2>
+
         </div>
-        <p className="App-intro">
-            {this.state.message}
-            {this.state.message}
-            {this.state.message}
-        </p>
+          <p className="App-intro">
+              <h2>Hello, World</h2>
+              {this.state.message1}
+          </p>
+          <p className="App-intro">
+              {this.state.message2}
+          </p>
+          <img id="dumb-meme" src="http://i.imgur.com/OnyPiye.png" alt="so dumb"/>
       </div>
     );
   }
